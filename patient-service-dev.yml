@@ -11,7 +11,7 @@ logging:
     root: INFO
 spring:
   config:
-    import: "configserver:"  # Removed "optional:" to enforce fail-fast
+    import: "optional:configserver:"  # Removed "optional:" to enforce fail-fast
   cloud:
     config:
       uri: http://localhost:8888
